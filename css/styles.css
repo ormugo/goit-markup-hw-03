@@ -1,0 +1,260 @@
+:root{
+    --primary-black-color: #212121;
+    --primary-text-color:#757575;   
+    --primary-white-color: #ffffff;
+
+    --accent-color: #2196f3;    
+    --background-black: #21303a;
+    --background-gray: #f5f4fa;
+    --buttom-filter: #f5f4fa;
+    --buttom-primary-hover: #188ce8;
+    --logo-black: #000000;  
+    --text-white-opacity: #ffffff99;
+}
+body{
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 15px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+a{
+    text-decoration: none;
+}
+.list{
+    list-style: none;
+}
+.button-primary {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    font-size: 16px;
+    font-weight: 700;
+
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+}
+.button-primary:hover{
+    background-color: var(--buttom-primary-hover);
+}
+.container{
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header nav .logo{
+    color: var(--accent-color);
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+footer .logo {
+    color: var(--accent-color);
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+header nav .nav-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.logo-black{
+    color: var(--logo-black);
+}
+.logo-white {
+    color: var(--primary-white-color);
+}
+.section{
+    padding-top: 54px;
+    padding-bottom: 50px;
+}
+.section > h2 {
+    color: var(--primary-black-color);
+    font-size: 32px;
+    font-weight: 700px;
+    padding: 30px 0;
+    text-align: center;
+}
+header nav .nav-menu .nav-menu-item{
+    color: var(--primary-black-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.contact-menu {
+    display: flex;
+    gap: 80px;
+}
+.contact-menu .contact-menu-item{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+}
+.nav-menu .nav-menu-item:hover,
+.nav-menu .nav-menu-item:focus,
+.nav-menu .nav-menu-item.current,
+.contact-menu .contact-menu-item:hover,
+.contact-menu .contact-menu-item:focus
+{
+    color: var(--accent-color);
+}
+.hero{
+    background-color: var(--primary-black-color);
+    padding: 200px 15px;
+    text-align: center;
+}
+.hero .hero-title{
+    color: var(--primary-white-color);
+    font-size: 44px;
+    text-transform: capitalize;
+    width: 500px;
+    margin: 20px auto;
+}
+.benefits {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    display: flex;
+}
+.benefits li {
+    width: 240px;
+}
+
+.benefits li .title {
+    height: 50px;
+    text-transform: uppercase;
+    color: var(--primary-black-color);
+}
+
+.what-we-do-section .container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.what-we-do-section .container ul li {
+    width: 360px;
+    list-style: none;
+
+}
+.team-section {
+    background-color: var(--background-gray);
+}
+.team {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    
+}
+.team li {
+    background-color: var(--primary-white-color);
+    text-align: center;
+    list-style: none;
+}
+.team li h3 {
+    margin: 20px 0 10px 0;
+}
+
+.portfolio .portfolio-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    list-style: none;
+}
+.portfolio .portfolio-list li button {
+    border: none;
+    outline: none;
+    color: var(--primary-black-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    padding: 10px 30px;
+}
+.portfolio .cards {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+}
+.portfolio .cards li {
+    margin-bottom: 20px;
+    width: 360px;
+}
+.portfolio .cards li a h2 {
+    color: var(--primary-black-color);
+    padding: 15px;
+}
+
+.portfolio .cards li a p {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    padding: 15px;
+}
+
+.portfolio .list li button {
+    color: var(--primary-black-color);
+    background-color: var(--text-white-opacity);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.portfolio .list li button:hover,
+.portfolio .list li button.current {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+footer{
+    padding: 54px 15px;
+    background-color: var(--background-black);
+}
+address ul {
+    list-style: none;
+}
+address .contact{
+    display: block;
+    color: var(--text-white-opacity);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+address .contact:hover{
+    color: var(--primary-white-color);
+}
