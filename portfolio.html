@@ -13,178 +13,280 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <title>WebStudio-Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>WebStudio</title>
   </head>
+
   <body>
-    <header class="page-header">
-      <nav>
-        <a class="logo" href="./index.html"
-          >Web<spam class="logo-black">Studio</spam></a
+    <header class="hat">
+      <div class="container">
+        <a href="index.html" class="logo" title="WebStudio">
+          <span class="accent">Web</span>Studio</a
         >
-        <ul class="nav-menu list">
-          <li>
-            <a class="nav-menu-item" href="./index.html">studio</a>
-          </li>
-          <li>
-            <a class="nav-menu-item current" href="./portfolio.html"
-              >portfolio</a
-            >
-          </li>
-          <li><a class="nav-menu-item" href="#">contact</a></li>
-        </ul>
-      </nav>
-      <ul class="contact-menu list">
-        <li>
-          <a class="contact-menu-item" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="contact-menu-item" href="tel:12127724150"
-            >+1 212-772-4150</a
-          >
-        </li>
-      </ul>
-    </header>
-    <main>
-      <section class="section portfolio">
-        <div class="container">
-          <ul class="portfolio-list list">
-            <li><button class="button current" type="button">All</button></li>
-            <li><button class="button" type="button">Web-Sites</button></li>
-            <li><button class="button" type="button">App</button></li>
-            <li><button class="button" type="button">Design</button></li>
-            <li><button class="button" type="button">Marketing</button></li>
+
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="./index.html" class="menu-link">Studio</a>
+            </li>
+
+            <li class="menu-item">
+              <a href="./portfolio.html" class="menu-link current">Portfolio</a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link">Contact</a>
+            </li>
           </ul>
-          <ul class="list cards">
-            <li>
-              <a href="" class="link"
-                ><img
-                  src="./images/img_portfolio1.jpg"
-                  alt="Technoduck"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Technoduck</h2>
-                <p class="portfolio-text">Web-site</p>
+        </nav>
+
+        <div class="top-contacts">
+          <ul class="top-contacts-list">
+            <li class="top-contacts-item">
+              <a href="mailto:info@devstudio.com" class="top-contacts-link mail"
+                >info@devstudio.com
               </a>
             </li>
-            <li>
-              <a href="" class="link"
-                ><img
-                  src="./images/img_portfolio2.jpg"
-                  alt="Poster New Orlean vs Golden Star"
-                  width="370"
-                />
-                <h2 class="portfolio-title">
-                  Poster New Orlean vs Golden Star
-                </h2>
-                <p class="portfolio-text">Design</p>
+
+            <li class="top-contacts-item">
+              <a href="tel:12127724150" class="top-contacts-link phone"
+                >+1 212-772-4150
               </a>
             </li>
-            <li>
-              <a href="" class="link"
-                ><img
-                  src="./images/img_portfolio3.jpg"
-                  alt="Seafood Restaurant"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Seafood Restaurant</h2>
-                <p class="portfolio-text">Apps</p>
-              </a>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="portfolio">
+        <div class="container">
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <button class="portfolio-button button-all" type="button">
+                All
+              </button>
             </li>
-            <li>
-              <a href="" class="link"
-                ><img
-                  src="./images/img_portfolio4.jpg"
-                  alt="Project Prime"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Proyect Prime</h2>
-                <p class="portfolio-text">Marketing</p>
-              </a>
+
+            <li class="portfolio-item">
+              <button class="portfolio-button" type="button">Web-Sites</button>
             </li>
-            <li>
-              <a href="" class="link"
-                ><img
-                  src="./images/img_portfolio5.jpg"
-                  alt="Proyect Boxes"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Proyect Boxes</h2>
-                <p class="portfolio-text">Apps</p>
-              </a>
+
+            <li class="portfolio-item">
+              <button class="portfolio-button" type="button">App</button>
             </li>
-            <li>
-              <a href="" class="link"
-                ><img
-                  src="./images/img_portfolio6.jpg"
-                  alt="Inspiration has no Borders"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Inspiration has no Borders</h2>
-                <p class="portfolio-text">Web-site</p>
-              </a>
+
+            <li class="portfolio-item">
+              <button class="portfolio-button" type="button">Design</button>
             </li>
-            <li>
-              <a href="" class="link"
-                ><img
-                  src="./images/img_portfolio7.jpg"
-                  alt="Limited Edition"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Limited Edition</h2>
-                <p class="portfolio-text">Desing</p>
-              </a>
+
+            <li class="portfolio-item">
+              <button class="portfolio-button" type="button">Marketing</button>
             </li>
-            <li>
-              <a href="" class="link"
-                ><img
-                  src="./images/img_portfolio8.jpg"
-                  alt="Project LAB"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Project LAB</h2>
-                <p class="portfolio-text">Marketing</p>
-              </a>
+          </ul>
+
+          <ul class="project-list">
+            <li class="project-item">
+              <div class="card">
+                <div class="card-thumb">
+                  <img
+                    class="img"
+                    src="./images/img_portfolio1.jpg"
+                    alt="project"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+
+                <div class="card-content">
+                  <h3 class="card-title">Technoduck</h3>
+                  <p class="card-text">Web-site</p>
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="" class="link"
-                ><img
-                  src="./images/img_portfolio9.jpg"
-                  alt="Growing Business"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Growing Business</h2>
-                <p class="portfolio-text">Apps</p>
-              </a>
+
+            <li class="project-item">
+              <div class="card">
+                <div class="card-thumb">
+                  <img
+                    class="img"
+                    src="./images/img_portfolio2.jpg"
+                    alt="project"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+
+                <div class="card-content">
+                  <h3 class="card-title">Poster New Orlean vs Golden Star</h3>
+                  <p class="card-text">Design</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item">
+              <div class="card">
+                <div class="card-thumb">
+                  <img
+                    class="img"
+                    src="./images/img_portfolio3.jpg"
+                    alt="project"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+
+                <div class="card-content">
+                  <h3 class="card-title">Seafood Restaurant</h3>
+                  <p class="card-text">Apps</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item">
+              <div class="card">
+                <div class="card-thumb">
+                  <img
+                    class="img"
+                    src="./images/img_portfolio4.jpg"
+                    alt="project"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+
+                <div class="card-content">
+                  <h3 class="card-title">Proyect Prime</h3>
+                  <p class="card-text">Marketing</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item">
+              <div class="card">
+                <div class="card-thumb">
+                  <img
+                    class="img"
+                    src="./images/img_portfolio5.jpg"
+                    alt="project"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+
+                <div class="card-content">
+                  <h3 class="card-title">Proyect Boxes</h3>
+                  <p class="card-text">Apps</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item">
+              <div class="card">
+                <div class="card-thumb">
+                  <img
+                    class="img"
+                    src="./images/img_portfolio6.jpg"
+                    alt="project"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+
+                <div class="card-content">
+                  <h3 class="card-title">Inspiration has no Borders</h3>
+                  <p class="card-text">Web-site</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item">
+              <div class="card">
+                <div class="card-thumb">
+                  <img
+                    class="img"
+                    src="./images/img_portfolio7.jpg"
+                    alt="project"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+
+                <div class="card-content">
+                  <h3 class="card-title">Limited Edition</h3>
+                  <p class="card-text">Desing</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item">
+              <div class="card">
+                <div class="card-thumb">
+                  <img
+                    class="img"
+                    src="./images/img_portfolio8.jpg"
+                    alt="project"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+
+                <div class="card-content">
+                  <h3 class="card-title">Project LAB</h3>
+                  <p class="card-text">Marketing</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item">
+              <div class="card">
+                <div class="card-thumb">
+                  <img
+                    class="img"
+                    src="./images/img_portfolio9.jpg"
+                    alt="project"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+
+                <div class="card-content">
+                  <h3 class="card-title">Growing Business</h3>
+                  <p class="card-text">Apps</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer>
+
+    <footer class="coordinates">
       <div class="container">
-        <a class="logo" href="./index.html"
-          >Web<spam class="logo-white">Studio</spam></a
-        >
-        <address>
-          <ul>
+        <a href="index.html" class="logo"
+          ><span class="accent">Web</span>Studio
+        </a>
+
+        <address class="address"> 
+          <ul class="address-list">
             <li>
               <a
-                class="contact"
+                class="address-item place"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 >695 Park Ave, NY 10065, USA</a
-              >
             </li>
+
             <li>
-              <a class="contact" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a href="#" class="address-item mail">info@example.com </a>
             </li>
+
             <li>
-              <a class="contact" href="tel:12127724150">+1 212-772-4150</a>
+              <a href="#" class="address-item phone">+1 212-772-4150</a>
             </li>
           </ul>
         </address>
@@ -192,3 +294,4 @@
     </footer>
   </body>
 </html>
+
